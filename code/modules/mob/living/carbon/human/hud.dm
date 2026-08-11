@@ -7,9 +7,8 @@
 	m_ints = list(  )
 	mov_int = list(  )
 	vimpaired = list(  )
-	darkMask = list(  )
 
-
+/*
 	g_dither = new h_type( src )
 	g_dither.screen_loc = "WEST,SOUTH to EAST,NORTH"
 	g_dither.name = "gasmask"
@@ -72,6 +71,7 @@
 	druggy.icon_state = "druggy"
 	druggy.layer = 17
 	druggy.mouse_opacity = 0
+	*/
 
 	// station explosion cinematic
 	station_explosion = new h_type( src )
@@ -427,19 +427,21 @@
 	mymob.pullin.icon_state = "pull0"
 	mymob.pullin.name = "pull"
 	mymob.pullin.screen_loc = ui_pull
-
+/*
 	mymob.blind = new /obj/screen( null )
 	mymob.blind.icon_state = "black"
 	mymob.blind.name = " "
 	mymob.blind.screen_loc = "1,1 to 15,15"
 	mymob.blind.layer = 0
 	mymob.blind.mouse_opacity = 0
-
+	*/
+/*
 	mymob.flash = new /obj/screen( null )
 	mymob.flash.icon_state = "blank"
 	mymob.flash.name = "flash"
 	mymob.flash.screen_loc = "1,1 to 15,15"
 	mymob.flash.layer = 17
+	*/
 
 	mymob.pain = new /obj/screen( null )
 	mymob.pain.icon_state = "blank"
@@ -558,7 +560,7 @@
 	mymob.client.screen = null
 
 	//, mymob.i_select, mymob.m_select
-	mymob.client.screen += list( mymob.pain, mymob.throw_icon, mymob.zone_sel, mymob.oxygen, mymob.toxin, mymob.bodytemp, mymob.internals, mymob.fire, mymob.hands, mymob.healths, mymob.pullin, mymob.blind, mymob.flash, mymob.rest, mymob.sleep) //, mymob.mach )
+	mymob.client.screen += list( mymob.pain, mymob.throw_icon, mymob.zone_sel, mymob.oxygen, mymob.toxin, mymob.bodytemp, mymob.internals, mymob.fire, mymob.hands, mymob.healths, mymob.pullin ) //, mymob.mach )
 	mymob.client.screen += adding + other
 
 	//if(istype(mymob,/mob/living/carbon/monkey)) mymob.client.screen += mon_blo
