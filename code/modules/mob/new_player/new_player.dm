@@ -32,7 +32,7 @@ mob/new_player
 			src.client.showmotd()
 		spawn(25)
 			new_player_panel()
-		src << "<b>We now have <a href='http://whoopshop.com/index.php/topic,1632.0.html'>guidelines</a>. Read them before playing or fear the wrath of the banhammer!"
+		src << "<html><body><b>We now have <a href='http://whoopshop.com/index.php/topic,1632.0.html'>guidelines</a>. Read them before playing or fear the wrath of the banhammer!"
 		var/starting_loc = pick(newplayer_start)
 		loc = starting_loc
 		sight |= SEE_TURFS
@@ -65,7 +65,7 @@ mob/new_player
 		new_player_panel()
 			set src = usr
 
-			var/output = "<HR><B>New Player Options</B><BR>"
+			var/output = "<html><body><HR><B>New Player Options</B><BR>"
 			output += "<HR><br><a href='byond://?src=\ref[src];show_preferences=1'>Setup Character</A><BR><BR>"
 			//if(istester(key))
 			if(!ticker || ticker.current_state <= GAME_STATE_PREGAME)
