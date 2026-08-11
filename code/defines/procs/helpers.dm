@@ -532,8 +532,9 @@
 			return 1
 	return 0
 
-/proc/sign(x) //Should get bonus points for being the most compact code in the world!
+/*/proc/sign(x) //Should get bonus points for being the most compact code in the world!
 	return x!=0?x/abs(x):0 //((x<0)?-1:((x>0)?1:0))
+	*/
 
 /*	//Kelson's version (doesn't work)
 /proc/getline(atom/M,atom/N)
