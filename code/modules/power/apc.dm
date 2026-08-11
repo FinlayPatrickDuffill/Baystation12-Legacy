@@ -218,7 +218,7 @@ Do deserunt Ut cillum in ad Duis et laboris dolore do voluptate anim Excepteur m
 		var/datum/function/R = new()
 		R.name = "response"
 		R.arg1 += "[src.name]\n"
-		R.arg1 += "Main breaker : <B>[operating ? "On" : "Off"]</B><BR>"
+		R.arg1 += "<html><body> Main breaker : <B>[operating ? "On" : "Off"]</B><BR>"
 		R.arg1 += "External power : <B>[ main_status ? (main_status ==2 ? "<FONT COLOR=#004000>Good</FONT>" : "<FONT COLOR=#D09000>Low</FONT>") : "<FONT COLOR=#F00000>None</FONT>"]</B><BR>"
 		R.arg1 += "Power cell: <B>[cell ? "[round(cell.percent())]%" : "<FONT COLOR=red>Not connected.</FONT>"]</B>"
 		if(cell)
